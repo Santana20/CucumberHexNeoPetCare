@@ -11,7 +11,6 @@ public class Mascota
     public Long getIdMascota() {
         return idMascota;
     }
-
     public void setIdMascota(Long idMascota) {
         this.idMascota = idMascota;
     }
@@ -19,7 +18,6 @@ public class Mascota
     public String getNombre() {
         return nombre;
     }
-
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
@@ -27,7 +25,6 @@ public class Mascota
     public int getEdad() {
         return edad;
     }
-
     public void setEdad(int edad) {
         this.edad = edad;
     }
@@ -35,7 +32,6 @@ public class Mascota
     public double getPeso() {
         return peso;
     }
-
     public void setPeso(double peso) {
         this.peso = peso;
     }
@@ -43,7 +39,6 @@ public class Mascota
     public Long getIdtipomascota() {
         return idtipomascota;
     }
-
     public void setIdtipomascota(Long idtipomascota) {
         this.idtipomascota = idtipomascota;
     }
