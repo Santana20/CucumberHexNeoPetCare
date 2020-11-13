@@ -1,6 +1,6 @@
 # language: en
 # encoding: iso-8859-1
-
+@onlythis
 Feature: Registro de usuario
   Como usuario Quiero registrarme en la aplicación Para utilizar las herramientas que me ofrece.
 
@@ -22,4 +22,4 @@ Feature: Registro de usuario
       | nombre | apellido  | direccion        | correo               | celular | username  | password |
       |        | Contreras | Jr. Ayacucho 458 | sebastian@prueba.com |         | sebastian | 123456   |
     When envio la peticion para registrarme
-    Then recibo un mensaje de error "No se pudo registrar al usuario."
+    Then recibo un mensaje de error de registro "No se pudo registrar al usuario."

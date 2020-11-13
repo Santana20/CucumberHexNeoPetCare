@@ -29,8 +29,8 @@ Feature: Registrar baños
     When envio la peticion para registrar
     Then recibo un mensaje de error "No se pudo registrar el baño. Ya se ha registrado uno para ese día."
 
-Feature: Registrar alimentos
-  Como dueño de mascota registrado Quiero tener un registro de alimentos de mi mascota Para tener controlada la nutrición de mi mascota.
+#Feature: Registrar alimentos
+  #Como dueño de mascota registrado Quiero tener un registro de alimentos de mi mascota Para tener controlada la nutrición de mi mascota.
 
   Scenario: El usuario registra un alimento para su mascota
     Given que ingreso al API "http://localhost:8080" para registrar
