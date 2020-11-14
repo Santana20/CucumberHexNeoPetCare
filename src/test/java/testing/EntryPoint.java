@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources",
         glue = "features",
         plugin = {"pretty", "html:target/cucumber-html-report", "json:target/cucumber.json"}
-        //,tags = {"@onlythis"}
+        //,tags = {"@onlythis1"}
 )
 public class EntryPoint
 {

@@ -61,6 +61,7 @@ public class registrarVacunaMascotaHTTP {
         OkHttpClient client = new OkHttpClient().newBuilder().build();
         MediaType mediaType = MediaType.parse("application/json");
 
+        System.out.println(this.buildUrl());
         System.out.println(this.vacunaMascotas);
         for (int i = 0; i < this.vacunaMascotas.size(); ++i) {
             RequestBody body = RequestBody.create(this.vacunaMascotas.get(i), mediaType);
