@@ -47,7 +47,7 @@ public class RegistroCuidado_registrarCuidado
     }
 
     @Given("teniendo como codigo de mascota {string} para registrar")
-    public void teniendo_como_codigo_de_usuario_para_registrar(String string)
+    public void teniendo_como_codigo_de_mascota_para_registrar(String string)
     {
         this.registrarRCuidadoHTTP.setIdMascota(string);
     }

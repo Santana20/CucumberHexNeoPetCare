@@ -9,7 +9,7 @@ Feature: Registrar baños
     And me ubico en la ruta "/api/registroCuidado/registrarCuidado/" para registrar
     And teniendo como codigo de mascota "1" para registrar
     And mediante el metodo "POST" para registrar
-    And tengo la siguiente lista para registrar
+    And tengo la siguiente lista de registros de cuidados para registrar
       | fechaRegistro | idCuidado |
       | 2020-11-20    | 2         |
       | 2020-12-02    | 2         |
@@ -20,9 +20,9 @@ Feature: Registrar baños
   Scenario: Se registran dos baños en la misma fecha
     Given que ingreso al API "http://localhost:8080" para registrar
     And me ubico en la ruta "/api/registroCuidado/registrarCuidado/" para registrar
-    And teniendo como codigo de usuario "1" para registrar
+    And teniendo como codigo de mascota "1" para registrar
     And mediante el metodo "POST" para registrar
-    And tengo la siguiente lista de mascotas para registrar
+    And tengo la siguiente lista de registros de cuidados para registrar
       | fechaRegistro | idCuidado |
       | 2020-11-20    | 2         |
       | 2020-11-20    | 2         |

@@ -19,19 +19,19 @@ public class Usuario_login {
     private loginUsuarioHTTP loginUsuarioHTTP;
     private void init() { this.loginUsuarioHTTP = new loginUsuarioHTTP(); }
 
-    @Given("que ingreso el API {string} para logearme")
-    public void queIngresoAlAPIParaLogearme(String arg0) {
+    @Given("que ingreso al API {string} para loguearme")
+    public void queIngresoAlAPIParaLoguearme(String arg0) {
         this.init();
         this.loginUsuarioHTTP.setUrl(arg0);
-
     }
-    @And("me ubico en la ruta {string} para logearme")
-    public void meUbicoEnLaRutaParaRegistrarme(String arg0) {
+
+    @And("me ubico en la ruta {string} para loguearme")
+    public void meUbicoEnLaRutaParaLoguearme(String arg0) {
         this.loginUsuarioHTTP.setPath(arg0);
     }
 
-    @And("mediante el metodo {string} para logearme")
-    public void medianteElMetodoParaRegistrarme(String arg0) {
+    @And("mediante el metodo {string} para loguearme")
+    public void medianteElMetodoParaLoguearme(String arg0) {
         this.loginUsuarioHTTP.setMethod(arg0);
     }
 
@@ -49,8 +49,8 @@ public class Usuario_login {
         }
     }
 
-    @When("envio la peticion para logearme")
-    public void envioLaPeticionParaLogearme() throws IOException {
+    @When("envio la peticion para loguearme")
+    public void envioLaPeticionParaLoguearme() throws IOException {
         this.loginUsuarioHTTP.makeRequest();
     }
 
@@ -64,8 +64,8 @@ public class Usuario_login {
         }
     }
 
-    @Then("recibo un mensaje de error de registro {string}")
-    public void reciboUnMensajeDeErrorDeRegistro(String arg0) {
+    @Then("recibo un mensaje de error de login {string}")
+    public void reciboUnMensajeDeErrorDeLogin(String arg0) {
         List<Pair<Integer, String>> codes = this.loginUsuarioHTTP.getResponseStatusCodesAndMessage();
 
         for (int i = 0; i < codes.size(); ++i) {
@@ -74,4 +74,6 @@ public class Usuario_login {
             //assertEquals(codes.get(i).getValue(), messageError);
         }
     }
+
+
 }
