@@ -35,7 +35,7 @@ public class Usuario_login {
         this.loginUsuarioHTTP.setMethod(arg0);
     }
 
-    @And("tengo los siguientes datos como usuario")
+   /* @And("tengo los siguientes datos como usuario")
     public void tengoLosSiguientesDatosComoUsuario(DataTable dataTable) throws IOException {
         List<Map<String, String>> lista = dataTable.asMaps(String.class, String.class);
 
@@ -47,7 +47,7 @@ public class Usuario_login {
 
             this.loginUsuarioHTTP.loginUsuario(usuario);
         }
-    }
+    }*/
 
     @When("envio la peticion para loguearme")
     public void envioLaPeticionParaLoguearme() throws IOException {

@@ -1,6 +1,6 @@
 # language: en
 # encoding: iso-8859-1
-@onlythis
+
 Feature: Login de usuario
   Como usuario Quiero loguearme en la aplicación Para utilizar las herramientas que me ofrece.
 

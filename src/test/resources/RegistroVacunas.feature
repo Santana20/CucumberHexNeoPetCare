@@ -1,6 +1,6 @@
 # language: en
 # encoding: iso-8859-1
-@onlythis1
+@onlythis
 Feature: Registro de Vacunas a mis mascotas
   como dueño de mascota quiero tener un registro de vacunas de mi mascota para estar al día con sus vacunas correspondientes.
 
